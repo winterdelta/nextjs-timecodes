@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Timecode from 'react-timecode';
 import { useState, useEffect } from 'react';
-import Luxon from '../components/Luxon';
+import LuxonLibrary from '../components/LuxonLibrary';
 
 export default function Home() {
   const [date, setDate] = useState(new Date());
@@ -28,7 +27,7 @@ export default function Home() {
       <main className={styles.main}>
         <div>This is the time:</div>
         <div>{date.toLocaleTimeString()}</div>
-        <Luxon />
+        <LuxonLibrary timeDiff={4} />
       </main>
     </div>
   );

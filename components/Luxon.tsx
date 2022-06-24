@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Timecode from 'react-timecode';
-import { useState, useEffect } from 'react';
-import { DateTime } from 'luxon';
+import DateTime from 'luxon';
 
 export default function Home() {
   const dt = DateTime.now()
