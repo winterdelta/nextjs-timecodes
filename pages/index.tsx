@@ -26,7 +26,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div>This is the time:</div>
-        <div>{date.toLocaleTimeString()}</div>
+        {/* <div>{date.toLocaleTimeString()}</div> */}
         <LuxonLibrary timeDiff={4} />
       </main>
     </div>
